@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+
+<style>
+    body {
+        font-family: Arial;
+        background: linear-gradient(135deg, #ffecd2, #fcb69f);
+        margin: 0;
+    }
+    .container {
+        max-width: 450px;
+        background: white;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+    }
+    .btn {
+        width: 100%;
+        background: #28a745;
+        padding: 15px;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .btn:hover { background: #1e7e34; }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>💳 Payment Details</h2>
+    
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="Expiry Date (MM/YY)">
+    <input type="text" placeholder="CVV">
+
+    <button class="btn" onclick="pay()">Pay Now</button>
+</div>
+
+<script>
+function pay() {
+    window.location.href = "thankyou.html";
+}
+</script>
+
+</body>
+</html>
